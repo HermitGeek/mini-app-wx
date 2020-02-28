@@ -2,7 +2,7 @@ import {
     storeBindingsBehavior
 } from 'mobx-miniprogram-bindings';
 import miniprogramComputed from 'miniprogram-computed';
-import $http from '../../$http/index';
+import $https from '../../$https/index';
 import {
     store
 } from '../../$store/index';
@@ -38,9 +38,9 @@ Component({
     methods: {
         async onLoad() {
             // 页面创建时执行
-            const response = await $http.wxPromisify(wx.login)();
+            const response = await $https.wxPromisify(wx.login)();
 
-            await $http.request('WECHAT_OPENID_LOGIN', {
+            await $https.request('WECHAT_OPENID_LOGIN', {
                 code: response.code
             });
 

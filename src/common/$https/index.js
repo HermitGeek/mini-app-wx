@@ -1,4 +1,4 @@
-import util from '../$util/index';
+import util from '../$utils/index';
 import configs from './configs/index';
 
 
