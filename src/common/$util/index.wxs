@@ -1,0 +1,6 @@
+module.exports = {
+    // getObjectValue, // 获取 对象/数组 中的值
+    // formatNumberToFixed, // 数字 保留n位小数的字符串（千分位分割）
+    // formatNumberValue, // 数字 转成 不带单位的数字（与 formatNumberUnit 配合使用）
+    // formatNumberUnit // 数字 转成 单位（与 formatNumberValue 配合使用）
+};

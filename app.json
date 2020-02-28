@@ -1,0 +1,25 @@
+{
+    "pages": ["src/common/pages/index/index"],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "subpackages": [
+        {
+            "root": "src/module1",
+            "name": "module1",
+            "independent": false,
+            "pages": ["pages/index/index"]
+        }
+    ],
+    "preloadRule": {
+        "src/common/pages/index/index": {
+            "network": "all",
+            "packages": ["module1"]
+        }
+    }
+}

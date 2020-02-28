@@ -1,0 +1,8 @@
+<view class="fc-line-area">
+    <ff-canvas
+        canvas-id="fc-line-area"
+        id="fc-line-area-dom"
+        opts="{{ opts }}"
+        wx:if="{{opts}}"
+    />
+</view>

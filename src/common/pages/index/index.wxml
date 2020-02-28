@@ -1,0 +1,41 @@
+<view class="index">
+  <view class="index__panel">
+    <view class="index__panel-title">mobx 状态管理</view>
+
+    <view class="index__panel-container">
+      <view>num1: {{ $num1 }}</view>
+      <view>num2: {{ $num2 }}</view>
+      <view>sum1And2: {{ $sum1And2 }}</view>
+
+      <van-button
+        bind:click="updateStoreValue"
+        type="primary"
+      >更新数值</van-button>
+    </view>
+  </view>
+
+  <view class="index__panel">
+    <view class="index__panel-title">computed、watch 扩展</view>
+
+    <view class="index__panel-container">
+      <view>num3: {{ num3 }}</view>
+      <view>num4: {{ num4 }}</view>
+      <view>num3And4: {{ num3And4 }}</view>
+      <van-button
+        bind:click="updateDataValue"
+        type="primary"
+      >更新数值</van-button>
+    </view>
+  </view>
+
+  <view class="index__panel">
+    <view class="index__panel-title">路由跳转 -- module1分包page</view>
+
+    <view class="index__panel-container">
+      <van-button
+        bind:click="goModule1PageIndex"
+        type="primary"
+      >跳转到 module1-index</van-button>
+    </view>
+  </view>
+</view>

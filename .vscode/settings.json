@@ -1,0 +1,47 @@
+{
+    // json 格式化
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    // jsonc 格式化
+    "[jsonc]": {
+        "editor.formatOnSave": true
+    },
+    // wxml 格式化
+    "[wxml]": {
+        "editor.formatOnSave": true
+    },
+    // 配置文件关联
+    "files.associations": {
+        ".eslintrc": "jsonc",
+        ".stylelintrc": "jsonc",
+        ".jsbeautifyrc": "jsonc",
+        ".prettierrc": "jsonc",
+        ".postcssrc": "jsonc",
+        "*.geojson": "json",
+        "*.cjson": "jsonc"
+    },
+    // 小程序相关
+    "minapp-vscode.wxmlFormatter": "prettyHtml",
+    // prettyHtml 默认配置
+    "minapp-vscode.prettyHtml": {
+        "useTabs": false,
+        "tabWidth": 2,
+        "printWidth": 100,
+        "singleQuote": false,
+        "usePrettier": true,
+        "wrapAttributes": true,
+        "sortAttributes": true
+    },
+    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
+// 1
+// 名称: minapp
+// id: qiu8310.minapp-vscode
+// 说明: 微信小程序标签、属性的智能补全（同时支持原生小程序、mpvue 和 wepy 框架，并提供 snippets）
+// 版本: 2.2.2
+// 发布者: Mora Qiu
+// VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=qiu8310.minapp-vscode
